@@ -1,0 +1,47 @@
+---
+title: "HW_4-1"
+author: "Vitaly Briker"
+date: "June 6, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Answer Question 1
+
+```{r college_grad1}
+library(fivethirtyeight)
+df=college_grad_students
+dim(df)
+colnames(df)
+```
+URL to data set "http://fivethirtyeight.com/features/the-economic-guide-to-picking-a-college-major/"
+
+## Answer Question 2
+
+```{r college_grad2}
+library(plyr)
+ncol(df)
+major_count=count(df, "major_category")
+major_count
+```
+
+## Answer Question 3
+
+```{r college_grad3}
+par(las=1) 
+barplot(major_count$freq,names.arg=major_count$major_category,
+        xlab = "Count",
+        main = "Graduation Category",
+        horiz=TRUE,col='darkblue')
+```
+
+## Answer Question 4
+
+```{r college_grad4}
+#set working directory
+setwd("F:\\My_Docs\\univer\\DataScience\\unit4")
+write.csv(df,file = "college_recent_grads.csv",row.names = FALSE)
+```
