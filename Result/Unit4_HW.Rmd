@@ -43,5 +43,5 @@ write.csv(df,file = "college_recent_grads.csv",row.names = FALSE)
 ```
 
 ## GitHub Link
-F:\My_Docs\univer\DataScience\git\Home_Work4\HW4\Result
+https://github.com/vbriker/HW4
 
