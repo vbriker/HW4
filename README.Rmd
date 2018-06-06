@@ -14,7 +14,7 @@ knitr::opts_chunk$set(echo = TRUE)
 This is repository contain home work for unit 4, questions 1 and 2.
 
 
-Qustion 1:
+Question 1:
 
 1. FiveThirtyEight Data (30 points): Navigate on GitHub to
 https://github.com/rudeboybert/fivethirtyeight and read README.md. Seriously, it will
@@ -26,7 +26,7 @@ c. Use a more detailed list of the data sets to write out the URL in a comment t
 related news story.
 d. Using R command(s), give the dimensions and column names of this data frame.
 
-Qustion 2:
+Question 2:
 
 2. Data Summary (30 points): Use your newly assigned data frame for Question 2.
 a. Write an R command that gives you the column names of the data frame. Right after
